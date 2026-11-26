@@ -1,0 +1,61 @@
+[
+  [
+    "POST",
+    "/transfers",
+    {
+      "ref": "P07-D1-1",
+      "kind": "repair",
+      "party": "fixer-2",
+      "amount_fen": 60000
+    },
+    [
+      [
+        0,
+        {}
+      ]
+    ]
+  ],
+  [
+    "GET",
+    "/transfers/P07-D1-1",
+    null,
+    [
+      [
+        200,
+        {
+          "ref": "P07-D1-1",
+          "kind": "repair",
+          "amount_fen": 60000,
+          "status": "pending"
+        }
+      ],
+      [
+        200,
+        {
+          "ref": "P07-D1-1",
+          "kind": "repair",
+          "amount_fen": 60000,
+          "status": "settled",
+          "settlement": "Z-0019"
+        }
+      ]
+    ]
+  ],
+  [
+    "GET",
+    "/transfers/P07-R1",
+    null,
+    [
+      [
+        200,
+        {
+          "ref": "P07-R1",
+          "kind": "recovery",
+          "amount_fen": 40000,
+          "status": "settled",
+          "settlement": "Z-0020"
+        }
+      ]
+    ]
+  ]
+]

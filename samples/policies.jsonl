@@ -1,0 +1,2 @@
+{"policy": "P-7", "agent": "agent-1", "party": "yard", "deductible_fen": 20000, "limit_fen": 160000}
+{"policy": "P-8", "agent": "agent-2", "party": "haul", "deductible_fen": 30000, "limit_fen": 120000}

@@ -1,0 +1,3 @@
+{"report": "D1", "incident": "J9", "vin": "V-41", "area": "right-door", "check": "Q2", "quote_fen": 80000, "issuer": "survey-A"}
+{"report": "D2", "incident": "J9", "vin": "V-42", "area": "front-bumper", "check": "Q4", "quote_fen": 75000, "issuer": "survey-A"}
+{"report": "D3", "incident": "J10", "vin": "V-41", "area": "right-door", "check": "Q3", "quote_fen": 68000, "issuer": "survey-B"}

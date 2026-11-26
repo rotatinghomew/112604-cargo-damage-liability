@@ -1,0 +1,86 @@
+{
+  "feeds": {
+    "checks": {
+      "key": [
+        "check"
+      ],
+      "fields": {
+        "check": "string",
+        "vin": "string",
+        "from_party": "string",
+        "to_party": "string",
+        "at": "time",
+        "area": "string",
+        "mark": "string",
+        "finding": "string",
+        "evidence_ref": "string"
+      },
+      "note": "mark 是查勘方的局部标签，不具有跨区间身份。finding 为 clear、scratch 或 dent。"
+    },
+    "reports": {
+      "key": [
+        "report"
+      ],
+      "fields": {
+        "report": "string",
+        "incident": "string",
+        "vin": "string",
+        "area": "string",
+        "check": "string",
+        "quote_fen": "int",
+        "issuer": "string"
+      },
+      "note": "共认事故由查勘机构签名确认；单方提交的同部位报告保留自身来源。"
+    },
+    "policies": {
+      "key": [
+        "policy"
+      ],
+      "fields": {
+        "policy": "string",
+        "agent": "string",
+        "party": "string",
+        "deductible_fen": "int",
+        "limit_fen": "int"
+      },
+      "note": "deductible_fen 为同次事故免赔额，limit_fen 为整份保单可用保险上限。款项均为人民币分。"
+    },
+    "evidence_register": {
+      "key": [
+        "evidence_ref"
+      ],
+      "fields": {
+        "evidence_ref": "string",
+        "side": "string",
+        "caption": "string"
+      },
+      "note": "查勘员随原始观察写下的照片索引和说明。车损定位可用这些已读记录，不依赖图像识别。"
+    }
+  },
+  "references": [
+    [
+      "reports",
+      [
+        "check",
+        "vin",
+        "area"
+      ],
+      "checks",
+      [
+        "check",
+        "vin",
+        "area"
+      ]
+    ],
+    [
+      "checks",
+      [
+        "evidence_ref"
+      ],
+      "evidence_register",
+      [
+        "evidence_ref"
+      ]
+    ]
+  ]
+}

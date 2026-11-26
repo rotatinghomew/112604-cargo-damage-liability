@@ -1,0 +1,4 @@
+{"check": "Q1", "vin": "V-41", "from_party": "factory", "to_party": "yard", "at": "2026-11-27T00:00:00Z", "area": "right-door", "mark": "n2", "finding": "clear", "evidence_ref": "photo-0"}
+{"check": "Q2", "vin": "V-41", "from_party": "yard", "to_party": "haul", "at": "2026-11-27T01:00:00Z", "area": "right-door", "mark": "a1", "finding": "scratch", "evidence_ref": "photo-1"}
+{"check": "Q3", "vin": "V-41", "from_party": "haul", "to_party": "terminal", "at": "2026-11-27T02:00:00Z", "area": "right-door", "mark": "b7", "finding": "dent", "evidence_ref": "photo-2"}
+{"check": "Q4", "vin": "V-42", "from_party": "haul", "to_party": "terminal", "at": "2026-11-27T02:01:00Z", "area": "front-bumper", "mark": "a1", "finding": "dent", "evidence_ref": "photo-3"}
